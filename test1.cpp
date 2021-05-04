@@ -4,12 +4,14 @@
 #include <string>
 #include <cmath>
 #include <random>
+#include <chrono>
 
 using namespace std;
 int main() {
 
   vector <double> vec;
-  default_random_engine generator;
+  unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+  default_random_engine generator.seed(seed);
   uniform_real_distribution <double> distribution(0.0,1000.0);
 
   for(int i=1; i<10; i++) {

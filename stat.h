@@ -8,21 +8,15 @@
  * **/
 
 #ifndef STAT_H_INCLUDED
-#define STAT_H_INCLUDED
+  #define STAT_H_INCLUDED
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cmath>
-#include <random>
+  #include <vector>
 
-using namespace std;
+  //Average calculator
+  double average(std::vector<double> &vec) {
+  }
 
-//Average calculator
-double average(vector<double> &vec) {
-}
-
-//Standard deviation calculator
-double deviation(vector<double> &vec, double avg) {
-}
+  //Standard deviation calculator
+  double deviation(std::vector<double> &vec, double avg) {
+  }
 #endif

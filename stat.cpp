@@ -8,11 +8,6 @@
  *  SOURCE FILE FOR HEADER
  * **/
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cmath>
-#include <random>
 #include "stat.h"
 
 //using namespace std;
