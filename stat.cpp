@@ -9,7 +9,7 @@
  * **/
 
 #include "stat.h"
-
+#include <cmath>
 
 //Average calculator
 double average(std::vector<double> &vec) {

@@ -6,6 +6,15 @@
 #include <random>
 #include <chrono>
 
+/*
+ *  Statistics Task:
+ *  - Functions to return the average and the standard deviation of a list.
+ *  - Generating a test list made out of randomly chosen variables
+ *  - Feeding the list to the functions.
+ *
+ * */
+//TODO: Get to work out the Makefile.
+
 int main() {
   //unique seed: current time
   unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();

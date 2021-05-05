@@ -5,11 +5,11 @@ vpath %.c $(SOURCES)
 
 CC = gcc
 CXX = g++
-CXXFLAGS = -fopenmp -O3 -std=c++11 -I. -I $(SOURCES)/lib
+CXXFLAGS = -std=c++11 -I. -I $(SOURCES)/lib
 LIBS = -lgsl -lgslcblas 
 
-PROGRAM = Ising
-OBJS = Ising.o something.o another.o
+PROGRAM = test1
+OBJS = stat.cpp test1.cpp
 
 $(PROGRAM): $(OBJS)
 	$(CXX) -o $@ $(CXXFLAGS) $^ $(LIBS)
