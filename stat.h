@@ -13,10 +13,8 @@
   #include <vector>
 
   //Average calculator
-  double average(std::vector<double> &vec) {
-  }
+  double average(std::vector<double> &vec){}
 
   //Standard deviation calculator
-  double deviation(std::vector<double> &vec, double avg) {
-  }
+  double deviation(std::vector<double> &vec, double avg){}
 #endif

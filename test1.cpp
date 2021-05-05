@@ -8,14 +8,20 @@
 
 using namespace std;
 int main() {
-
-  vector <double> vec;
+  //unique seed: current time
   unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
-  default_random_engine generator.seed(seed);
+  
+  //mersenne twister generator, initialize with previous seed
+  mt19937 gen;
+  gen.seed(seed);
+
+  //uniform real distribution between 1,1000
   uniform_real_distribution <double> distribution(0.0,1000.0);
 
+  //Push "random" values to 10-element array
+  vector <double> vec;
   for(int i=1; i<10; i++) {
-    vec.push_back(distribution(generator));
+    vec.push_back(distribution(gen));
   }
   cout<<"Values of the sample are:\n";
   //Printing the values of the random distribution

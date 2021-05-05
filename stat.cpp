@@ -10,10 +10,9 @@
 
 #include "stat.h"
 
-//using namespace std;
 
 //Average calculator
-double average(vector<double> &vec) {
+double average(std::ector<double> &vec) {
   double avg = 0;
   for(auto &i: vec) {
     avg += i/double(vec.size());
@@ -22,7 +21,7 @@ double average(vector<double> &vec) {
 }
 
 //Standard deviation calculator
-double deviation(vector<double> &vec, double avg) {
+double deviation(std::vector<double> &vec, double avg) {
   double deviation = 0;
   for (auto &i: vec) {
     deviation += pow((i-avg),2);
