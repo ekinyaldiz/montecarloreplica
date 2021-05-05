@@ -12,7 +12,7 @@
 
 
 //Average calculator
-double average(std::ector<double> &vec) {
+double average(std::vector<double> &vec) {
   double avg = 0;
   for(auto &i: vec) {
     avg += i/double(vec.size());
