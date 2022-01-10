@@ -1,15 +1,15 @@
-SOURCES=$(HOME)/devel/sources
-vpath %.cc $(SOURCES) 
-vpath %.cpp $(SOURCES)
-vpath %.c $(SOURCES)
+#SOURCES=$(HOME)/devel/sources
+#vpath %.cc $(SOURCES) 
+#vpath %.cpp $(SOURCES)
+#vpath %.c $(SOURCES)
 
 CC = gcc
 CXX = g++
 CXXFLAGS = -std=c++11 -I. -I $(SOURCES)/lib
-LIBS = -lgsl -lgslcblas 
+#LIBS = -lgsl -lgslcblas 
 
-PROGRAM = test1
-OBJS = stat.cpp test1.cpp
+PROGRAM = test
+OBJS = stat.cpp main.cpp
 
 $(PROGRAM): $(OBJS)
 	$(CXX) -o $@ $(CXXFLAGS) $^ $(LIBS)

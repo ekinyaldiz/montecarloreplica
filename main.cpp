@@ -13,7 +13,6 @@
  *  - Feeding the list to the functions.
  *
  * */
-//TODO: Get to work out the Makefile.
 
 int main() {
   //unique seed: current time
