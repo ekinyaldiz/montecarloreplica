@@ -1,3 +1,7 @@
+#Makefile template provided by Jacques Bloch\
+for the course Monte Carlo Methods in Physics\
+at University of Regensburg SS20.
+
 #SOURCES=$(HOME)/devel/sources
 #vpath %.cc $(SOURCES) 
 #vpath %.cpp $(SOURCES)
